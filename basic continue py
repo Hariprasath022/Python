@@ -290,5 +290,16 @@ Hrs= 1 mins= 34 secs= 38
 
 print("Hrs=", hours, "mins=", minutes, "secs=", secs_finally_remaining)
 
+STRINGS AND LISTS 
+
+t = (5,)
+print(type(t))
+
+x = (5)
+print(type(x))
+
+output:
+<class 'tuple'>
+<class 'int'>
 
 
