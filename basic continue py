@@ -302,4 +302,47 @@ output:
 <class 'tuple'>
 <class 'int'>
 
+ Index Operator: Working with the Characters of a String¶
+ 
+ school = "Luther College"
+m = school[2]
+print(m)
+
+lastchar = school[-1]
+print(lastchar)
+output:
+t
+e
+
+numbers = [17, 123, 87, 34, 66, 8398, 44]
+print(numbers[2])
+print(numbers[9-8])
+print(numbers[-2])
+output:
+87
+123
+8398
+
+LENGTH 
+
+fruit = "Banana"
+print(len(fruit))
+output:
+6
+
+fruit = "Banana"
+sz = len(fruit)
+lastch = fruit[sz-1]
+print(lastch)
+output:
+a
+
+alist =  ["hello", 2.0, 5]
+print(len(alist))
+print(len(alist[0]))
+output:
+3
+5
+
+
 
