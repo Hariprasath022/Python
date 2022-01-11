@@ -344,5 +344,141 @@ output:
 3
 5
 
+LOOPS AND ITERATION
+
+FOR LOOP
+
+for name in ["Joe", "Amy", "Brad", "Angelina", "Zuki", "Thandi", "Paris"]:
+    print("Hi", name, "Please come to my party on Saturday!")
+for subs in["a","b","c","<"]:
+    print("hi",subs,"something rubbish bye")
+    
+ OUTPUT :
+Hi Joe Please come to my party on Saturday!
+Hi Amy Please come to my party on Saturday!
+Hi Brad Please come to my party on Saturday!
+Hi Angelina Please come to my party on Saturday!
+Hi Zuki Please come to my party on Saturday!
+Hi Thandi Please come to my party on Saturday!
+Hi Paris Please come to my party on Saturday!
+hi a something rubbish bye
+hi b something rubbish bye
+hi c something rubbish bye
+hi < something rubbish bye
+
+for achar in "Go Spot Go":
+    print(achar)
+    
+for love in[" I love python"]:
+    print(love)
+OUTPUT :
+G
+o
+ 
+S
+p
+o
+t
+ 
+G
+o
+ I love python
+ 
+ fruits = ["apple", "orange", "banana", "cherry"]
+
+for afruits in fruits:     # by item
+    print(afruits)
+fruit = ["hi","bye","hello"]
+for name in fruit:
+    print(name)
+OUTPUT :
+apple
+orange
+banana
+cherry
+hi
+bye
+hello
+
+for _ in range(3):
+    print("This line will execute three times")
+    print("This line will also execute three times")
+OUTPUT :
+This line will execute three times
+This line will also execute three times
+This line will execute three times
+This line will also execute three times
+This line will execute three times
+This line will also execute three times
+
+import turtle
+a=turtle.Screen()
+ohh=turtle.Turtle()
+
+for i in [2,2,2,2,2]:
+    ohh.forward(80)
+    ohh.right(80)
+    
+a.exitonclick()
+
+***************************
+
+nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+accum = 0
+for w in nums:
+    accum = accum + w
+print(accum)
+
+OUTPUT:
+55
+
+print("range(5): ")
+for i in range(5):
+    print(i)
+
+print("range(0,5): ")
+for i in range(0, 5):
+    print(i)
+
+# Notice the casting of `range` to the `list`
+print(list(range(5)))
+print(list(range(0,5)))
+
+# Note: `range` function is already casted as `list` in the textbook
+print(range(5))
+
+OUTPUT :
+range(5): 
+0
+1
+2
+3
+4
+range(0,5): 
+0
+1
+2
+3
+4
+[0, 1, 2, 3, 4]
+[0, 1, 2, 3, 4]
+range(0, 5)
+
+accum = 0
+for w in range(11):
+    accum = accum + w
+print(accum)
+
+# or, if you use two inputs for the range function
+
+sec_accum = 0
+for w in range(1,11):
+    sec_accum = sec_accum + w
+print(sec_accum)
+
+OUTPUT :
+55
+55
+
 
 
