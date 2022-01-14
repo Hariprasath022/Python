@@ -522,6 +522,75 @@ print(img.getHeight())
 
 p = img.getPixel(45, 55)
 print(p.getRed(), p.getGreen(), p.getBlue())
+
+w = range(10)
+
+tot = 0
+for num in w:
+    tot += num
+print(tot)
+
+OUTPUT
+45
+
+w = range(10)
+
+
+tot = 0
+for num in w:
+    print(num)
+    tot += num
+    print(tot)
+print(tot)
+OUTPUT
+0
+0
+1
+1
+2
+3
+3
+6
+4
+10
+5
+15
+6
+21
+7
+28
+8
+36
+9
+45
+45
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 OUTPUT ;
 400
 244
