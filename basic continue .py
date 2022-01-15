@@ -680,3 +680,15 @@ or
 img.draw(win)
 win.exitonclick()
 
+******
+
+x = 15
+
+if x % 2 == 0:
+    print(x, "is even")
+else:
+    print(x, "is odd")
+OUTPUT 
+15 is odd
+
+
