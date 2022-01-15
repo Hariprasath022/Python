@@ -613,6 +613,67 @@ for row in range(img.getHeight()):
         newblue = 255 - p.getBlue()
 
         newpixel = image.Pixel(newred, newgreen, newblue)
+      
+      
+ #*****************WEEK 3 **************************
+
+total_weight = int(input('Enter total weight of luggage:'))
+num_pieces = int(input('Number of pieces of luggage?'))
+
+if num_pieces!=0 and total_weight / num_pieces > 50:
+   print('Average weight is greater than 50 pounds -> $100 surcharge.')
+
+print('Luggage check complete.')
+
+#Precedence of Operators
+Level
+
+Category
+
+Operators
+
+7(high)
+
+exponent
+
+**
+
+6
+
+multiplication
+
+*,/,//,%
+
+5
+
+addition
+
++,-
+
+4
+
+relational
+
+==,!=,<=,>=,>,<
+
+3
+
+logical
+
+not
+
+2
+
+logical
+
+and
+
+1(low)
+
+logical
+
+or
+
 
         img.setPixel(col, row, newpixel)
 
