@@ -691,4 +691,50 @@ else:
 OUTPUT 
 15 is odd
 
+#unary selection
 
+x = 10
+if x < 0:
+    print("The negative number ",  x, " is not valid here.")
+print("This is always printed")
+
+OUTPUT
+This is always printed
+x = 10
+y = 10
+
+if x < y:
+    print("x is less than y")
+else:
+    if x > y:
+        print("x is greater than y")
+    else:
+        print("x and y must be equal")
+OUTPUT 
+x and y must be equal
+
+# CHAINED COINDITIONAL
+
+x = 10
+y = 10
+
+if x < y:
+    print("x is less than y")
+elif x > y:
+    print("x is greater than y")
+else:
+    print("x and y must be equal")
+OUTPUT
+x and y must be equal
+
+percent_rain = [94.3, 45, 100, 78, 16, 5.3, 79, 86]
+resps = []
+for i in percent_rain:
+    if i > 90:
+        resps.append("Bring an umbrella.")
+    elif i >80:
+        resps.append("Good for the flowers?")                   
+    elif i > 50:
+        resps.append("Watch out for clouds!")
+    else:
+        resps.append("Nice day!")
