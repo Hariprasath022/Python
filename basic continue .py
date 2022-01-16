@@ -738,3 +738,39 @@ for i in percent_rain:
         resps.append("Watch out for clouds!")
     else:
         resps.append("Nice day!")
+         
+#*************************************************************************************************************************
+
+
+#The Accumulator Pattern with Conditionals
+
+tom = " hlo maklae it i tom "
+total = 0
+for phra in tom:
+    if phra != " ":
+        total = total + 1
+print(total)
+
+OUTPUT 
+15
+
+msge = " hi tom, how are u tom, nice to meet you " ,"tom"
+a=0
+for msg in msge:
+    if msg in["tom"]:
+        a+=1
+print(a)
+
+OUTPUT
+1
+
+nums = [9, 3, 8, 11, 5, 29, 2]
+best_num = [0]
+for n in nums:
+    if n > best_num:
+        best_num = n
+print(best_num)
+
+OUTPUT 
+29
+
