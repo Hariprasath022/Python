@@ -774,3 +774,132 @@ print(best_num)
 OUTPUT 
 29
 
+#MUTABILITY
+
+fruit = ["banana", "apple", "cherry"]
+print(fruit)
+
+fruit[0] = "pear"
+fruit[-1] = "orange"
+print(fruit)
+
+OUTPUT
+['banana', 'apple', 'cherry']
+['pear', 'apple', 'orange']
+
+alist = ['a', 'b', 'c', 'd', 'e', 'f']
+alist[1:3] = ['x', 'y']
+print(alist)
+OUTPUT
+['a', 'x', 'y', 'd', 'e', 'f']
+
+alist = ['a', 'b', 'c', 'd', 'e', 'f']
+alist[1:3] = []
+print(alist)
+
+OUTPUT
+['a', 'd', 'e', 'f']
+
+alist = ['a', 'd', 'f']
+alist[1:1] = ['b', 'c']
+print(alist)
+alist[4:4] = ['e']
+print(alist)
+
+OUTPUT
+['a', 'b', 'c', 'd', 'f']
+['a', 'b', 'c', 'd', 'e', 'f']
+
+greeting = "Hello, world!"
+newGreeting = 'J' + greeting[1:]
+print(newGreeting)
+print(greeting)          # same as it was
+
+OUTPUT
+Jello, world!
+Hello, world!
+
+a = ['one', 'two', 'three']
+del a[1]
+print(a)
+
+alist = ['a', 'b', 'c', 'd', 'e', 'f']
+del alist[1:5]
+print(alist)
+
+OUTPUT
+['one', 'three']
+['a', 'f']
+
+a = "banana"
+b = "banana"
+print(a is b)
+print(id(a))
+print(id(b))
+
+OUTPUT 
+True
+2
+2
+
+a = [81,82,83]
+b = [81,82,83]
+
+print(a is b)
+
+print(a == b)
+
+print(id(a))
+print(id(b))
+OUTPUT
+False
+True
+3
+4
+
+ALIASING
+
+a = [81, 82, 83]
+b = a
+print(a is b)
+
+OUTPT
+
+TRUE
+
+a = [81,82,83]
+b = [81,82,83]
+print(a is b)
+
+b = a
+print(a == b)
+print(a is b)
+
+b[0] = 5
+print(a)
+
+OUTPUT 
+
+False
+True
+True
+[5, 82, 83]
+
+CLONING LIST 
+
+a = [81,82,83]
+
+b = a[:]       # make a clone using slice
+print(a == b)
+print(a is b)
+
+b[0] = 5
+
+OUTPUT 
+True
+False
+[81, 82, 83]
+[5, 82, 83]
+
+print(a)
+print(b)
