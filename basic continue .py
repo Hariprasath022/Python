@@ -903,3 +903,115 @@ False
 
 print(a)
 print(b)
+
+#*****************************************************
+MUTATATING METHOD 
+
+mylist = []
+mylist.append(5)
+mylist.append(27)
+mylist.append(3)
+mylist.append(12)
+print(mylist)
+
+mylist.insert(1, 12)
+print(mylist)
+print(mylist.count(12))
+
+print(mylist.index(3))
+print(mylist.count(5))
+
+mylist.reverse()
+print(mylist)
+
+mylist.sort()
+print(mylist)
+
+mylist.remove(5)
+print(mylist)
+
+lastitem = mylist.pop()
+print(lastitem)
+print(mylist)
+
+OUTPUT 
+
+[5, 27, 3, 12]
+[5, 12, 27, 3, 12]
+2
+3
+1
+[12, 3, 27, 12, 5]
+[3, 5, 12, 12, 27]
+[3, 12, 12, 27]
+27
+[3, 12, 12]
+
+mylist = []
+mylist.append(5)
+mylist.append(27)
+mylist.append(3)
+mylist.append(12)
+print(mylist)
+
+mylist = mylist.sort()   #probably an error
+print(mylist)
+
+OUTPUT 
+[5, 27, 3, 12]
+None
+
+
+origlist = [45,32,88]
+
+origlist.append("cat")
+print(origlist)
+
+OUTPUT 
+[45, 32, 88, 'cat']
+
+origlist = [45,32,88]
+print("origlist:", origlist)
+print("the identifier:", id(origlist))             #id of the list before changes
+newlist = origlist + ['cat']
+print("newlist:", newlist)
+print("the identifier:", id(newlist))              #id of the list after concatentation
+origlist.append('cat')
+print("origlist:", origlist)
+print("the identifier:", id(origlist))             #id of the list after append is used
+
+OUTPUT 
+
+origlist: [45, 32, 88]
+the identifier: 2
+newlist: [45, 32, 88, 'cat']
+the identifier: 3
+origlist: [45, 32, 88, 'cat']
+the identifier: 2
+   
+st = "Warmth"
+a = []
+b = a + [st[0]]
+c = b + [st[1]]
+d = c + [st[2]]
+e = d + [st[3]]
+f = e + [st[4]]
+g = f + [st[5]]
+print(g)
+
+OUTPUT 
+['W', 'a', 'r', 'm', 't', 'h']
+
+st = "Warmth"
+a = []
+a.append(st[0])
+a.append(st[1])
+a.append(st[2])
+a.append(st[3])
+a.append(st[4])
+a.append(st[5])
+print(a)
+
+OUTPUT 
+['W', 'a', 'r', 'm', 't', 'h']
+
