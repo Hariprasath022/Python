@@ -1108,4 +1108,18 @@ Hello, Sally. Nice to meet you.
 Hello, Nice to meet you. Sally
 
 
+#**************************
+
+The Accumulator Pattern with Lists
+
+nums = [3, 5, 8]
+accum = []
+for w in nums:
+    x = w**2
+    accum.append(x)
+print(accum)
+
+OUTPUT
+[9, 25, 64]
+
 
