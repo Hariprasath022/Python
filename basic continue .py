@@ -1015,3 +1015,97 @@ print(a)
 OUTPUT 
 ['W', 'a', 'r', 'm', 't', 'h']
 
+#********************************************************
+
+NON-MUTATING METHODS ON STRING 
+
+ss = "Hello, World"
+print(ss.upper())
+
+tt = ss.lower()
+print(tt)
+print(ss)
+
+OUTPUT 
+HELLO, WORLD
+hello, world
+Hello, World
+
+ss = "    Hello, World    "
+
+els = ss.count("l")
+print(els)
+
+print("***"+ss.strip()+"***")
+
+news = ss.replace("o", "***")
+print(news)
+
+OUTPUT 
+3
+***Hello, World***
+    Hell***, W***rld    
+
+   scores = [("Rodney Dangerfield", -1), ("Marlon Brando", 1), ("You", 100)]
+for person in scores:
+    name = person[0]
+    score = person[1]
+    print("Hello " + name + ". Your score is " + str(score))
+OUTPUT 
+Hello Rodney Dangerfield. Your score is -1
+Hello Marlon Brando. Your score is 1
+Hello You. Your score is 100
+
+
+scores = [("Rodney Dangerfield", -1), ("Marlon Brando", 1), ("You", 100)]
+for person in scores:
+    name = person[0]
+    score = person[1]
+    print("Hello {}. Your score is {}.".format(name, score))
+
+OUTPTUT 
+Hello Rodney Dangerfield. Your score is -1.
+Hello Marlon Brando. Your score is 1.
+Hello You. Your score is 100.
+
+person = input('Enter your name: ')
+print('Hello {}!'.format(person))
+
+OUTPUT 
+Hello hp!
+
+origPrice = float(input('Enter the original price: $'))
+discount = float(input('Enter discount percentage: '))
+newPrice = (1 - discount/100)*origPrice
+calculation = '${} discounted by {}% is ${}.'.format(origPrice, discount, newPrice)
+print(calculation)
+
+OUTPUT 
+$76.0 discounted by 70.0% is $22.8.
+
+
+origPrice = float(input('Enter the original price: $'))
+discount = float(input('Enter discount percentage: '))
+newPrice = (1 - discount/100)*origPrice
+calculation = '${:.2f} discounted by {}% is ${:.2f}.'.format(origPrice, discount, newPrice)
+print(calculation)
+
+OUTPUT 
+$67.00 discounted by 89.0% is $7.37.
+
+name = "Sally"
+greeting = "Nice to meet you"
+s = "Hello, {}. {}."
+
+print(s.format(name,greeting)) # will print Hello, Sally. Nice to meet you.
+
+print(s.format(greeting,name)) # will print Hello, Nice to meet you. Sally.
+
+print(s.format(name)) # 2 {}s, only one interpolation item! Not ideal.
+
+OUTPUT
+Hello, Sally. Nice to meet you.
+Hello, Nice to meet you. Sally
+
+
+
